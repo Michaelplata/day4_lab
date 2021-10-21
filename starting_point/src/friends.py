@@ -13,6 +13,8 @@ def likes_to_eat(person, snack):
             likes_snack = False
     return likes_snack
     
+def add_friend(person, new_friend):
+    return person["friends"].append("Scrappy-Doo")
 
     
 
