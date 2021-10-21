@@ -1,12 +1,20 @@
-def get_name(person5):
-    return person5["name"]
+def get_name(person):
+    return person["name"]
 
-def get_favourite_tv_show(person2):
-    return person2["favourites"]["tv_show"]
+def get_favourite_tv_show(person):
+    return person["favourites"]["tv_show"]
 
-def likes_to_eat(person2, snack):
-    if snack == person2["favourites"]["snacks"][1]:
-        return True
+def likes_to_eat(person, snack):
+    likes_snack = True
+    for i in person["favourites"]["snacks"]: 
+        if i == snack:
+            likes_snack = True
+        else: 
+            likes_snack = False
+    return likes_snack
+    
+
+    
 
 
 
